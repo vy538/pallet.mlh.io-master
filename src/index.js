@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "pallet-wrap-css/css/pallet-0.3.0.css";
+import "./pallet-0.4.5.css";
 import { configureAnchors } from "react-scrollable-anchor";
 
 configureAnchors({ offset: -60, scrollDuration: 0 });
