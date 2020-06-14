@@ -180,8 +180,11 @@
 
 :root {
   --red: rgb(231, 52, 39);
+  --dark-mode-red: rgb(242, 152, 148);
   --blue: rgb(29, 83, 159);
+  --dark-mode-blue: rgb(131, 210, 255);
   --yellow: rgb(248, 185, 42);
+  --dark-mode-yellow: rgb(254, 242, 154);
   --navy: rgb(18, 47, 76);
   --red-80: rgba(231, 52, 39, 0.8);
   --red-60: rgba(231, 52, 39, 0.6);
@@ -231,6 +234,7 @@
   --purple-10: rgba(164, 83, 160, 0.1);
   --near-black: #1e1e28;
   --dark-gray: #35353f;
+  --dark-mode-bg: #121212;
   --mid-gray: #7a7a84;
   --gray: #9e9ea8;
   --silver: #b8bac0;
