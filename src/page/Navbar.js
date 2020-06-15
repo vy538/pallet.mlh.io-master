@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useState,Component } from "react";
+import {ThemeProvider} from "styled-components";
+import { lightTheme, darkTheme } from "../sections/components/Themes";
+import { GlobalStyles } from "../sections/components/GlobalStyles";
+import Button from "../components/Button";
 
-const Navbar = () => (
+
+
+function Navbar(){
+
+  const [theme, setTheme] = useState('light');
+const toggleTheme = () => {
+  if (theme === 'light') {
+    setTheme('dark');
+  } else {
+    setTheme('light');
+  }
+}
+
+  return(<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <>
+      <GlobalStyles/>
   <div className="bg-navy text-white py-2">
     <nav className="nav d-flex justify-content-between px-3">
       <div className="d-flex w-50">
@@ -27,9 +46,20 @@ const Navbar = () => (
         >
           GitHub
         </a>
+        <a
+          className="text-white text-semibold p-3"
+          onClick={toggleTheme}
+        >
+          Dark Mode
+        </a>
       </div>
     </nav>
   </div>
-);
+
+  </>
+  </ThemeProvider>);
+}
+
+
 
 export default Navbar;

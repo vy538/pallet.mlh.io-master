@@ -9,7 +9,6 @@ import Forms from "./sections/components/Forms";
 import Navbars from "./sections/components/Navbars";
 
 import {ThemeProvider} from "styled-components";
-
 import { lightTheme, darkTheme } from "./sections/components/Themes";
 import { GlobalStyles } from "./sections/components/GlobalStyles";
 
@@ -38,7 +37,7 @@ function App(){
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <>
       <GlobalStyles/>
-      <button onClick={toggleTheme}>Switch Theme</button>
+     
       <div>
         <Navbar />
         <div className="d-flex">
